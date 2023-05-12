@@ -55,15 +55,28 @@ a {
 
 /* ===========Header============ */
 
-.header {
+.fixed-header{
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    display: flex;
+    /* dự phòng nếu có thêm thẻ con sữ bị ngang lên cùng với .content vì df */
+    flex-direction: column;
+
+    background: #e6f0ff;
     height: 100vh;
     position: relative;
-    background: #e6f0ff;
 }
 
 .navbar {
     display: flex;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0px;
 }
 
 .navbar ul {
