@@ -70,7 +70,8 @@ a {
     display: flex;
     /* dự phòng nếu có thêm thẻ con sữ bị ngang lên cùng với .content vì df */
     flex-direction: column;
-
+    /* căn giữa thằng info*/
+    justify-content: center;
     background: #e6f0ff;
     /* vì thêm fixed header nên nhà bị đẩy xuống 90px */
     height: calc(100vh - 90px);
@@ -120,21 +121,19 @@ a {
     margin-left: 18px;
 }
 
-/* HERO */
-
-.hero .info {
+/* HERO-wrap */
+.hero-wrap .info {
     width: 51%;
-    margin-top: 130px;
 }
 
-.hero .info .sub-title {
+.hero-wrap .info .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.01em;
     color: #687690;
 }
 
-.hero .info .title {
+.hero-wrap .info .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 62px;
@@ -142,7 +141,7 @@ a {
     color: #000336;
 }
 
-.hero .info .desc {
+.hero-wrap .info .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
